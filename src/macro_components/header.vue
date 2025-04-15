@@ -1,13 +1,20 @@
 <script setup>
 
-const minhaDiv = document.querySelector('.infs')
+    const minhaDiv = document.querySelector('#infs')
+    
+    function thescroll() {
+    minhaDiv.scrollTo({
+    top: 500, // scrolla verticalmente 200px
+    behavior: 'smooth' // rolagem suave
+    })
+    }
 
-function thescroll() {
-  minhaDiv.scrollTo({
-  top: 200, // scrolla verticalmente 200px
-  behavior: 'smooth' // rolagem suave
-})
-}
+    function toup() {
+    minhaDiv.scrollTo({
+    top: 0, // scrolla verticalmente 200px
+    behavior: 'smooth' // rolagem suave
+    })
+    }
 
 </script>
 
@@ -17,7 +24,7 @@ function thescroll() {
         <p class="plusfont">Desenvolvedor Front-end</p>
         <p>Criação de sites inclusivos e responsivos para uma melhor experiencia web</p>
         <ul id="guide">
-            <li>Sobre</li>
+            <li @click="toup">Sobre</li>
             <li @click="thescroll">Experiencias</li>
             <li>Projetos</li>
         </ul>
