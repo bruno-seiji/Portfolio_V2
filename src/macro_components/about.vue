@@ -30,19 +30,20 @@
     gap: 1rem;
     padding: 1rem;
     box-sizing: border-box;
+    height: fit-content;
 
 
     p{
         color: white;
         font-size: 1.3rem;
         line-height: 2rem;
-        opacity: 0.7;
-    }
-
-    }
-
- .destaque{
-    opacity: 1;
-    }
+        color: rgba(255, 255, 255, 0.5); 
     
+        .destaque{
+            color: rgba(255, 255, 255, 1); 
+        }
+    }
+
+
+   }
 </style>
