@@ -29,6 +29,7 @@
     flex-direction: column;
     gap: 1rem;
     padding: 1rem;
+    margin-bottom: 1rem;
     box-sizing: border-box;
     height: fit-content;
 

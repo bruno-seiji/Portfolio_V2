@@ -2,6 +2,13 @@
   import Theheader from "../src/macro_components/header.vue"
   import Theabout from "../src/macro_components/about.vue"
   import Thexp from "../src/macro_components/experiences.vue"
+
+
+
+
+
+
+
 </script>
 
 <template>

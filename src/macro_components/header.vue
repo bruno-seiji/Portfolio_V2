@@ -1,4 +1,15 @@
-<script setup></script>
+<script setup>
+
+const minhaDiv = document.querySelector('.infs')
+
+function thescroll() {
+  minhaDiv.scrollTo({
+  top: 200, // scrolla verticalmente 200px
+  behavior: 'smooth' // rolagem suave
+})
+}
+
+</script>
 
 <template>
     <header>
@@ -7,7 +18,7 @@
         <p>Criação de sites inclusivos e responsivos para uma melhor experiencia web</p>
         <ul id="guide">
             <li>Sobre</li>
-            <li>Experiencias</li>
+            <li @click="thescroll">Experiencias</li>
             <li>Projetos</li>
         </ul>
         <ul id="socials">

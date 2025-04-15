@@ -20,6 +20,22 @@
         display: grid;
         grid-template-columns: auto auto;
         grid-template-rows: repeat(2, auto) ;
+        color: white ;
+        gap: 0.8rem;
+        font-size: 1.3rem;
+
+        #work_lenght{
+            grid-row: 1 / span 2 ;
+            margin-right: 1rem;
+            opacity: 0.5;
+            width: 13rem;
+        }
+
+        #title{}
+
+        #resume{
+            opacity: 0.5;
+        }
 
     }
 
