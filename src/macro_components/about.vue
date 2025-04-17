@@ -2,7 +2,7 @@
 
 
 <template>
-    <div>
+    <div id="about">
         <p>
         Sou <span class="destaque">Engenheiro Elétrico</span> e atualmente estou cursando <span class="destaque">Análise e Desenvolvimento de Sistemas</span>, com foco em <span class="destaque">desenvolvimento web</span>. Estou estudando <span class="destaque">Vue.js e React</span> (ambos em processo de aprendizado), e me familiarizando com tecnologias como <span class="destaque">HTML, CSS, JavaScript, Tailwind CSS e SASS</span>.
         </p>
@@ -23,28 +23,61 @@
 
 
 <style scoped>
-   
-   div {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    padding: 1rem;
-    margin-bottom: 1rem;
-    box-sizing: border-box;
-    height: fit-content;
+    @media (min-width: 1270px) {
 
+        div{
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
 
-    p{
-        color: white;
-        font-size: 1.3rem;
-        line-height: 2rem;
-        color: rgba(255, 255, 255, 0.5); 
-    
-        .destaque{
-            color: rgba(255, 255, 255, 1); 
+            p{
+                font-weight: 400;
+                font-size: 1.2rem;
+                text-align: justify;
+                color: rgb(255, 255, 255, 0.5);
+                line-height: 1.5rem;
+                
+
+                span{
+                    color: rgb(255, 255, 255, 1);
+                }
+            
+            
+            }
         }
+
+
+
+}
+
+    @media (max-width: 450px) {
+        div {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            margin-bottom: 8rem;
+            
+            
+           
+           p{ 
+                width: 90vw;
+                overflow-x: auto;
+                word-break: break-word;
+                padding: 0.3rem;
+                box-sizing: border-box;
+                text-align: justify;
+                font-size: 1.2rem;
+                color: rgb(255, 255, 255, 0.5);
+                line-height: 1.5rem;
+                
+
+                span{
+                    color: rgb(255, 255, 255, 1);
+                }
+            }
+        }
+
     }
 
-
-   }
+    
 </style>

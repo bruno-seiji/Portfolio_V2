@@ -47,4 +47,11 @@ table {
 /* ------------------------------------------------------------*/
 
 
-
+body{
+	background-color: rgb(15, 23, 42);
+	display: block;
+	width: 100vw;
+	height: 100vh;
+	color: aliceblue;
+	
+}

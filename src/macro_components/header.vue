@@ -1,31 +1,16 @@
 <script setup>
 
-    const minhaDiv = document.querySelector('#infs')
-    
-    function thescroll() {
-    minhaDiv.scrollTo({
-    top: 500, // scrolla verticalmente 200px
-    behavior: 'smooth' // rolagem suave
-    })
-    }
-
-    function toup() {
-    minhaDiv.scrollTo({
-    top: 0, // scrolla verticalmente 200px
-    behavior: 'smooth' // rolagem suave
-    })
-    }
 
 </script>
 
 <template>
     <header>
         <h1>Bruno Seiji</h1>
-        <p class="plusfont">Desenvolvedor Front-end</p>
+        <p>Desenvolvedor Front-end</p>
         <p>Criação de sites inclusivos e responsivos para uma melhor experiencia web</p>
         <ul id="guide">
-            <li @click="toup">Sobre</li>
-            <li @click="thescroll">Experiencias</li>
+            <li>Sobre</li>
+            <li>Experiencias</li>
             <li>Projetos</li>
         </ul>
         <ul id="socials">
@@ -43,65 +28,98 @@
 </template>
 
 <style scoped>
-    header{
-        color: white;
-        gap: 1rem;
-        position: fixed;
-        display: flex;
-        flex-direction: column ;
-        padding-top: 10%;
+   
+
+@media (max-width: 450px) {
+    header {
+        padding: 1rem;
         box-sizing: border-box;
-        width: 50%;
+        margin-top: 3rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
 
         h1{
+            font-size: 2.5rem;
             font-weight: 700;
-            font-size: 4rem;
+        }
+
+        p:first-of-type {
+            font-weight: 700;
+            color: rgba(255, 255, 255, 1);
         }
 
         p{
-            font-weight: 400;
             font-size: 1.2rem;
-            opacity: 0.5;
-            width: 60%;
-        }
-
-        .plusfont{
-            opacity: 1;
-        }
-    
-        li{
-            cursor: pointer;
-            width: fit-content;
-
+            color: rgba(255, 255, 255, 0.5);
         }
 
         #guide{
-            margin-top: 4rem;
-            display: flex;
-            flex-direction: column;
-            gap: 0.8rem;
-            margin-bottom: 2rem;
-
-            li{
-                font-size: 1.5rem;
-            }
-
-            li:hover{
-                text-decoration: underline;
-            }
+            display: none;
         }
 
         #socials{
-
             display: flex;
             gap: 1rem;
-            img{
-                width: 2rem;
-                color: white;
-                
-            }
+        }
+        
+        img{width: 2rem;}
+    }
+}
+
+@media (min-width: 1270px) {
+    header {
+        width: 50%;
+        height: 100vh;
+        justify-self: start;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1rem;
+        padding-top: 5rem;
+        box-sizing: border-box;
+        position: fixed;
+
+        h1{
+            font-weight: 700;
+            font-size: 3rem;
+            
         }
 
+        p:first-of-type{
+            font-weight: 700;
+            color: rgb(255,255,255,1);
+            width: 100%;
+        }
+
+        p{
+            font-size: 1.2rem;
+            color: rgb(255,255,255,0.5);
+            width: 60%;
+            text-align: justify;
+        }
+
+        #guide{
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            margin-top: 5rem;
+
+         li:hover{
+            text-decoration: underline;
+         }
+        }
+
+        #socials{
+            display: flex;
+            gap: 1rem;
+            margin-top: 15rem;
+            
+            img{
+                width: 2rem;
+            }
+        }
+    }
 }
 </style>
 

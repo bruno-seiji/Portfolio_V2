@@ -16,27 +16,51 @@
 </template>
 
 <style scoped>
-    div{
-        display: grid;
-        grid-template-columns: auto auto;
-        grid-template-rows: repeat(2, auto) ;
-        color: white ;
-        gap: 0.8rem;
-        font-size: 1.3rem;
+      @media (min-width: 1270px) {
 
-        #work_lenght{
-            grid-row: 1 / span 2 ;
-            margin-right: 1rem;
-            opacity: 0.5;
-            width: 13rem;
+        div{
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            
+            p{
+                font-weight: 400;
+                font-size: 1.2rem;
+                text-align: justify;
+            }
         }
+      }
 
-        #title{}
 
-        #resume{
-            opacity: 0.5;
+    @media (max-width: 450px) {
+        div {
+            display: flex;
+            flex-direction: column;
+            
+
+            p:first-of-type {
+                margin-top: 1rem;
+            }
+
+            p:last-of-type{
+                margin-bottom: 2rem;
+            }
+                      
+           p{ 
+                width: 90vw;
+                overflow-x: auto;
+                word-break: break-word;
+                box-sizing: border-box;
+                text-align: justify;
+                font-size: 1.2rem;
+                color: rgb(255, 255, 255, 0.5);
+                line-height: 1.5rem;
+            }
+
+            #title{
+                color: rgb(255, 255, 255, 1); 
+            }
         }
-
     }
 
 </style>
