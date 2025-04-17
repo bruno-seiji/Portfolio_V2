@@ -29,13 +29,14 @@
             display: flex;
             flex-direction: column;
             gap: 1rem;
+            font-size: 1.5rem;
 
             p{
                 font-weight: 400;
-                font-size: 1.2rem;
+               
                 text-align: justify;
                 color: rgb(255, 255, 255, 0.5);
-                line-height: 1.5rem;
+                line-height: 2rem;
                 
 
                 span{

@@ -93,7 +93,7 @@
         }
 
         p{
-            font-size: 1.2rem;
+            font-size: 1.5rem;
             color: rgb(255,255,255,0.5);
             width: 60%;
             text-align: justify;
@@ -105,9 +105,13 @@
             gap: 1rem;
             margin-top: 5rem;
 
-         li:hover{
-            text-decoration: underline;
-         }
+            li{
+                font-size: 1.5rem;
+            }
+
+            li:hover{
+                text-decoration: underline;
+            }
         }
 
         #socials{

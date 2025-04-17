@@ -2,7 +2,7 @@
   import Theheader from "../src/macro_components/header.vue"
   import Theabout from "../src/macro_components/about.vue"
   import Thexp from "../src/macro_components/experiences.vue"
- 
+  import PJS from "../src/macro_components/projects.vue"
 
 
 
@@ -15,10 +15,12 @@
   <div id="main">  
     <Theheader></Theheader>
     <div id="infs">
-      <title>About</title>
+      <title>Sobre</title>
       <Theabout></Theabout>
-      <title>Experience</title>
+      <title>Experiências</title>
       <Thexp></Thexp>
+      <title>Projetos</title>
+      <PJS></PJS>
     </div>
 
   </div>
