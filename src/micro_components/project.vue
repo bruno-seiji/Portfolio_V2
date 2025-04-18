@@ -1,11 +1,16 @@
 <script setup>
-    import XP from "../micro_components/experience.vue"
+    
 </script>
 
 <template>
-
-    <XP></XP>
-    <div id="tecnologias"></div>
+    <div>
+        <img src="" alt="" srcset="">
+        <title></title>
+        <p></p>
+        <div id="tecnologias"></div>
+    </div>
+    
+    
 
 </template>
 
