@@ -14,6 +14,7 @@
 <template>
   <div id="main">  
     <Theheader></Theheader>
+    <div class="shadow"></div>
     <div id="infs">
       <title>Sobre</title>
       <Theabout></Theabout>
@@ -49,6 +50,10 @@
       margin-bottom: 1rem;
 
     }
+
+    .shadow{
+      display: none;
+    }
   }
 
   @media(min-width: 1270px){
@@ -59,12 +64,11 @@
     }
 
     #infs{
-      width: 50vw;
+      width: 50%;
       padding: 1rem;
       padding-top: 5rem;
       box-sizing: border-box;
-      position: absolute;
-      right: 0;
+      scroll-behavior: smooth;
     }
 
     #title{
@@ -81,8 +85,10 @@
       #work_lenght{
         padding-top: 2rem;
       }
+    }
 
-      
+    .shadow{
+      width: 50%;
     }
   }
 

@@ -1,5 +1,9 @@
 <script setup>
-
+    function scrolltotop() {
+        
+        window.scrollTo({top: 0,  behavior: 'smooth'});
+        
+    }
 
 </script>
 
@@ -9,9 +13,9 @@
         <p>Desenvolvedor Front-end</p>
         <p>Criação de sites inclusivos e responsivos para uma melhor experiencia web</p>
         <ul id="guide">
-            <li>Sobre</li>
-            <li>Experiencias</li>
-            <li>Projetos</li>
+            <li @click="scrolltotop">Sobre</li>
+            <li><a href="#experiences">Experiencias</a></li>
+            <li><a href=""></a>Projetos</li>
         </ul>
         <ul id="socials">
             <li class="github">
@@ -104,9 +108,18 @@
             flex-direction: column;
             gap: 1rem;
             margin-top: 5rem;
+            width: fit-content;
 
             li{
                 font-size: 1.5rem;
+                width: fit-content;  
+                cursor: pointer;
+
+                a{
+                    text-decoration: none;
+                    color: white;
+                    width: fit-content;    
+                }
             }
 
             li:hover{
