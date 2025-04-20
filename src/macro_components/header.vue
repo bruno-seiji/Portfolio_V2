@@ -91,13 +91,13 @@
         p:first-of-type{
             font-weight: 700;
             color: rgb(255,255,255,1);
-            width: 100%;
+            width: 25rem;
         }
 
         p{
             font-size: 1.5rem;
             color: rgb(255,255,255,0.5);
-            width: 60%;
+            width: 25rem;
             text-align: justify;
         }
 
