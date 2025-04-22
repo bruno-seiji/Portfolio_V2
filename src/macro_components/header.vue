@@ -1,6 +1,10 @@
 <script setup>
     function scrolltotop() {
-        window.scrollTo({top: 0,  behavior: 'smooth'});
+        window.scrollTo({top: 0});
+    }
+
+    function scrolltobot() {
+        window.scrollTo({top: document.body.scrollHeight});
     }
 
 </script>
@@ -13,7 +17,7 @@
         <ul id="guide">
             <li @click="scrolltotop">Sobre</li>
             <li><a href="#experiences">Experiencias</a></li>
-            <li><a href=""></a>Projetos</li>
+            <li @click="scrolltobot"><a href="#projects"></a>Projetos</li>
         </ul>
         <ul id="socials">
             <li class="github">

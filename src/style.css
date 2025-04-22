@@ -45,7 +45,9 @@ table {
 }
 
 /* ------------------------------------------------------------*/
-
+html {
+	scroll-behavior: smooth;
+}
 
 body{
 	background-color: rgb(15, 23, 42);
@@ -53,5 +55,6 @@ body{
 	width: 100vw;
 	height: 100vh;
 	color: aliceblue;
+	
 	
 }

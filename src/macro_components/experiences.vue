@@ -12,5 +12,15 @@
 </template>
 
 <style scoped>
-
+    @media (min-width: 1270px) {
+     
+        #experiences {
+            margin-top: 6rem;       
+        }
+    }
+    @media (max-width: 450px) {
+        #experiences {
+        margin-bottom: 8rem;       
+        }
+    }
 </style>
